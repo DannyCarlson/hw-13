@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mission to Mars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Mission to mars</h1>
+            <p>
+                <a class="button-primary" href="/scrape" role="button">Scrape New Mars Data</a>
+            </p>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h2>This is the latest Mars news.</h2>
+                <h3>{{news_title}}</h3>
+                <p>{{news_p}}</p>
+            </div>
+        </div>
+
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class="col-md-8 big_box">
+                    <h2>This is the featured image from JPL.</h2>
+                    <img id="featured_image" src={{mars.img_url}} alt="Mars featured image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
